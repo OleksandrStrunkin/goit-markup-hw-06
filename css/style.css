@@ -121,7 +121,11 @@ p {
   left: 12px;
   transform: translateY(-50%);
 }
+.modal-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
 .modal-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
