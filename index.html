@@ -424,6 +424,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <form class="fotfo">
+            <p class="form-title">Підпишіться на розсилку</p>
+            <div class="footer-field">
+              <label for="email" class="footer-label"></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="footer-input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-btn">
+                Підписатися
+                <svg class="footer-btn-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-iconsend"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -441,7 +462,6 @@
               type="text"
               name="name"
               class="modal-input"
-              placeholder="Name"
               required
               id="name"
             />
@@ -452,30 +472,31 @@
               type="tel"
               name="tel"
               class="modal-input"
-              placeholder="Tell"
               required
               id="tell"
             />
           </div>
           <div class="modal-field">
             <label for="mail" class="modal-label">Пошта</label>
-            <input
-              type="email"
-              name="email"
-              class="modal-input"
-              placeholder="Mail"
-              id="mail"
-            />
+            <input type="email" name="email" class="modal-input" id="mail" />
           </div>
           <div class="modal-field">
             <label for="coment" class="modal-label">Коментар</label>
             <textarea
               name="feedback"
               id="coment"
-              rows="10"
               class="modal-feedback"
               placeholder="Введіть текст"
             ></textarea>
+          </div>
+          <div class="modal-chek">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree"
+              ><svg class="check-icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use></svg
+              >Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a></label
+            >
           </div>
           <button type="submit" class="modal-btn">Відправити</button>
         </form>
